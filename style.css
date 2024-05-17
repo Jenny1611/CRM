@@ -4,7 +4,7 @@ body {
 }
 
 .sidebar {
-    width: 90px;
+    width: 80px;
     position: fixed;
     height: 100%;
     background: #333;
@@ -22,12 +22,6 @@ body {
     a {
         display: block;
     }
-
-    #content-clienti,
-    #content-da-contattare,
-    #content-contattati {
-        margin-left: 230px;
-    }
 }
 
 .sidebar div {
@@ -38,7 +32,7 @@ body {
 }
 
 .sidebar div:hover {
-    background-color: #666;
+    background-color: #777;
     border-radius: 40px;
 }
 
@@ -54,12 +48,12 @@ body {
 #content-clienti,
 #content-da-contattare,
 #content-contattati {
-    margin-left: 120px;
+    margin-left: 110px;
     padding: 20px 20px 20px 0;
 }
 
 .current-page {
-    background-color: #777;
+    background-color: #555;
     border-radius: 40px;
 }
 

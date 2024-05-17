@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <div id="dashboard">
+            <img src="dashboard.png" alt="dashboard" width="40px">
+            <a href="#">Dashboard</a>
+        </div>
+        <div id='clienti'>
+            <img src="clienti.png" alt="clienti" width="40px">
+            <a href="#">Clienti</a>
+        </div>
+        <div id='da-contattare'>
+            <img src="da-contattare.png" alt="da-contattare" width="40px">
+            <a href="#">Da Contattare</a>
+        </div>
+        <div id="contattati">
+            <img src="contattati.png" alt="contattati" width="40px">
+            <a href="#">Contattati</a>
+        </div>
+        <!-- Aggiungi altre categorie qui -->
+    </div>
+
+    <div id="content-clienti">
+        <table id="infoTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Cognome</th>
+                    <th>Email</th>
+                    <th>Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Maria</td>
+                    <td>Rossi</td>
+                    <td>mariarossi@gmail.com</td>
+                    <td>012 3456 789</td>
+                </tr>
+                <tr>
+                    <td>Giulia</td>
+                    <td>Bianchi</td>
+                    <td>giuliabianchi@gmail.com</td>
+                    <td>256 1485 102</td>
+                </tr>
+                <tr>
+                    <td>Mario</td>
+                    <td>Rossi</td>
+                    <td>mariorossi@gmail.com</td>
+                    <td>365 789 789</td>
+                </tr>
+                <tr>
+                    <td>Alessia</td>
+                    <td>Pifferi</td>
+                    <td>alessiapifferi@gmail.com</td>
+                    <td>321 4801 958</td>
+                </tr>
+                <tr>
+                    <td>Giulio</td>
+                    <td>Golia</td>
+                    <td>giuliogolia@gmail.com</td>
+                    <td>152 3652 448</td>
+                </tr>
+                <tr>
+                    <td>Marco</td>
+                    <td>Verdi</td>
+                    <td>marcoverdi@gmail.com</td>
+                    <td>365 1203 991</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="content-da-contattare">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <br>
+        <div id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69"></div>
+    </div>
+
+    <div id="content-contattati">
+        <canvas id="graficoCartesiano" style="width:100%;max-width:600px"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

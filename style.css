@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.sidebar {
+    width: 90px;
+    position: fixed;
+    height: 100%;
+    background: #333;
+    padding: 10px;
+    transition: 0.8s;
+
+    a {
+        display: none;
+    }
+}
+
+.sidebar:hover {
+    width: 200px;
+
+    a {
+        display: block;
+    }
+
+    #content-clienti,
+    #content-da-contattare,
+    #content-contattati {
+        margin-left: 230px;
+    }
+}
+
+.sidebar div {
+    display: flex;
+    border-bottom: 1px solid #444;
+    padding: 10px;
+    align-items: center;
+}
+
+.sidebar div:hover {
+    background-color: #666;
+    border-radius: 40px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar img {
+    margin: 0px 10px;
+}
+
+#content-clienti,
+#content-da-contattare,
+#content-contattati {
+    margin-left: 120px;
+    padding: 20px 20px 20px 0;
+}
+
+.current-page {
+    background-color: #777;
+    border-radius: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #555;
+    color: white;
+}
+
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#div1,
+#drag1 {
+    width: 350px;
+    height: 70px;
+    padding: 0;
+    border: 1px solid #aaaaaa;
+}
+
+#div1 {
+    height: 300px;
+}

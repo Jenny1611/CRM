@@ -3,6 +3,11 @@ body {
     margin: 0;
 }
 
+#myPieChart {
+    width: 400px;
+    height: 400px;
+}
+
 .sidebar {
     width: 80px;
     position: fixed;
@@ -56,7 +61,7 @@ body {
 #content-da-contattare,
 #content-contattati {
     margin-left: 110px;
-    padding: 20px 20px 20px 0;
+    padding: 20px 0 20px 0;
 }
 
 .current-page {
@@ -71,6 +76,7 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 2rem;
 }
 
 th,
@@ -91,14 +97,91 @@ canvas {
     -ms-user-select: none;
 }
 
-#div1,
-#drag1 {
-    width: 350px;
-    height: 70px;
-    padding: 0;
-    border: 1px solid #aaaaaa;
+#kanban-board {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+    font-size: 14px;
 }
 
-#div1 {
-    height: 300px;
+#kanban-board::-webkit-scrollbar {
+    display: none;
+}
+
+#kanban-board h1 {
+    font-size: 15px;
+    margin: 2px 20px;
+}
+
+.div-ondrop,
+.div-drag {
+    border: 1px solid #000;
+}
+
+.div-ondrop {
+    min-width: 320px;
+    min-height: 340px;
+    height: fit-content;
+    background-color: #fffff0;
+	text-align: center;
+	line-height: 40px;
+}
+
+.div-drag {
+    width: 300px;
+    margin: 10px;
+    height: auto;
+    background-color: #d5ccef;
+    border-radius: 20px;
+	text-align: start;
+	line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-drag div {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-drag .attività {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-drag .attività img:first-of-type{
+    width: 15px;
+    height: 15px;
+}
+
+.div-drag .icone {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+}
+
+.div-drag .icone img {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 6px;
+    margin: 10px;
+}
+
+.div-drag img {
+    width: 25px;
+    height: 25px;
+    margin: 6px;
+}
+
+#kanban-da-contattare {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

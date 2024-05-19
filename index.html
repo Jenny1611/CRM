@@ -7,6 +7,7 @@
     <title>CRM</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
@@ -80,16 +81,174 @@
                 </tr>
             </tbody>
         </table>
+        <div id="kanban-board">
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <div id="kanban-da-contattare">
+                    <h1>DA CONTATTARE</h1>
+                    <img src="add.png" alt="add" width="30px">
+                </div>
+                <div class="div-drag" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>PROPOSTA INVIATA</h1>
+                <div class="div-drag" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>NEGOZIAZIONE</h1>
+                <div class="div-drag" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>CHIUSURA</h1>
+                <div class="div-drag" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>VENDITA CONCLUSA</h1>
+                <div class="div-drag" id="drag5" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>POST-VENDITA</h1>
+                <div class="div-drag" id="drag6" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h1>PERSE</h1>
+                <div class="div-drag" id="drag7" draggable="true" ondragstart="drag(event)" width="336" height="69">
+                    <div class="dati">
+                        <h2>John Smith</h2>
+                        <b>Prodotto/servizio</b>
+                        <p class="prezzo">€300</p>
+                        <p class="data">GG/MM/AAAA</p>
+                        <div class="attività">
+                            <p>Attività</p>
+                            <img src="dropdown.png" alt="dropdown">
+                            <img src="add.png" alt="add">
+                        </div>
+                    </div>
+                    <div class="icone">
+                        <img src="modifica.png" alt="modifica">
+                        <img src="telefono.png" alt="telefono">
+                        <img src="gmail.png" alt="gmail">
+                        <img src="whatsapp.png" alt="whatsapp">
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div id="content-da-contattare">
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <br>
-        <div id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69"></div>
+        <canvas id="myDoughnutChart"></canvas>
     </div>
 
     <div id="content-contattati">
-        <canvas id="graficoCartesiano" style="width:100%;max-width:600px"></canvas>
+        <canvas id="graficoCartesiano" width="600px"></canvas>
     </div>
 
     <script src="script.js"></script>

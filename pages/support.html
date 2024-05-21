@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div id="menu">
-            <div id="dashboard" class="current-page">
+            <div id="dashboard">
                 <img src="/sidebar/dashboard.png" alt="dashboard">
                 <a href="/index.html">Dashboard</a>
             </div>
@@ -32,7 +32,7 @@
                 <img src="/sidebar/sales.png" alt="sales">
                 <a href="/pages/sales.html">Sales</a>
             </div>
-            <div id="supporto">
+            <div id="supporto" class="current-page">
                 <img src="/sidebar/supporto.png" alt="supporto">
                 <a href="/pages/support.html">Support</a>
             </div>
@@ -40,15 +40,11 @@
         </div>
     </div>
 
-    <div id="content-dashboard">
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
+    <div id="content-support">
+        <canvas id="graficoCartesiano" width="600px"></canvas>
     </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CRM</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -20,11 +20,11 @@
             </div>
         </div>
         <div id="menu">
-            <div id="dashboard" class="current-page">
+            <div id="dashboard">
                 <img src="/sidebar/dashboard.png" alt="dashboard">
                 <a href="/index.html">Dashboard</a>
             </div>
-            <div id="marketing">
+            <div id="marketing" class="current-page">
                 <img src="/sidebar/marketing.png" alt="marketing">
                 <a href="/pages/marketing.html">Marketing</a>
             </div>
@@ -40,15 +40,11 @@
         </div>
     </div>
 
-    <div id="content-dashboard">
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
-        <div class="div-dashboard"></div>
+    <div id="content-marketing">
+        <canvas id="myDoughnutChart"></canvas>
     </div>
 
     <script src="/script.js"></script>
 </body>
+
 </html>

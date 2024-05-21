@@ -82,6 +82,7 @@ function drop(event) {
 
 
 let dashboard = document.getElementById('dashboard')
+let contentDashboard = document.getElementById('content-dashboard')
 
 let clienti = document.getElementById('clienti')
 let contentClienti = document.getElementById('content-clienti')
@@ -95,9 +96,10 @@ let contattati = document.getElementById('contattati')
 let contentContattati = document.getElementById('content-contattati')
 
 dashboard.addEventListener('click', () => {
-    contentClienti.style.display = 'block';
-    contentDaContattare.style.display = 'block';
-    contentContattati.style.display = 'block';
+    contentDashboard.style.display = 'flex';
+    contentClienti.style.display = 'none';
+    contentDaContattare.style.display = 'none';
+    contentContattati.style.display = 'none';
     dashboard.className = "current-page";
     clienti.className = "";
     daContattare.className = "";
@@ -105,6 +107,7 @@ dashboard.addEventListener('click', () => {
 })
 
 clienti.addEventListener('click', () => {
+    contentDashboard.style.display = 'none';
     contentClienti.style.display = 'block';
     contentDaContattare.style.display = 'none';
     contentContattati.style.display = 'none';
@@ -115,6 +118,7 @@ clienti.addEventListener('click', () => {
 })
 
 daContattare.addEventListener('click', () => {
+    contentDashboard.style.display = 'none';
     contentClienti.style.display = 'none';
     contentDaContattare.style.display = 'block';
     contentContattati.style.display = 'none';
@@ -125,6 +129,7 @@ daContattare.addEventListener('click', () => {
 })
 
 contattati.addEventListener('click', () => {
+    contentDashboard.style.display = 'none';
     contentClienti.style.display = 'none';
     contentDaContattare.style.display = 'none';
     contentContattati.style.display = 'block';

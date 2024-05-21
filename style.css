@@ -57,11 +57,30 @@ body {
     color: #fff;
 }
 
+#content-dashboard {
+    margin-left: 110px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 700px;
+    gap: 0;
+}
+
+.div-dashboard {
+    border: 1px solid #999;
+    height: 40%;
+    width: 33%;
+    margin: 0;
+}
+
 #content-clienti,
 #content-da-contattare,
 #content-contattati {
     margin-left: 110px;
     padding: 20px 0 20px 0;
+    display: none;
 }
 
 .current-page {

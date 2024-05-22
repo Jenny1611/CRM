@@ -128,8 +128,7 @@ var emailOpenedChart = new Chart(emailOpenedCtx, {
 /**-------------------------------------FINE ------------------------------------------------ */
 
 
-
-
+/*
 var xValues = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 var yValues = [0, 30, 15, 2, 45, 20, 60, 53, 100, 75, 50];
 
@@ -190,7 +189,7 @@ const myDoughnutChart = new Chart(ctx, {
         }
     }
 });
-
+*/
 
 function allowDrop(event) {
     event.preventDefault();

@@ -152,7 +152,7 @@ body {
 
 .sidebar #logout {
     visibility: hidden;
-    margin: 10px 0 35px 0;
+    margin: 10px 0 0 0;
     font-size: 14px;
     height: 14px;
     background-color: #aaa;
@@ -168,6 +168,9 @@ body {
 
 .sidebar #logout a {
     color: #000;
+    display: inline;
+    height: 16px;
+    line-height: 16px;
 }
 
 .sidebar:hover {
@@ -178,15 +181,12 @@ body {
     visibility: visible;
 }
 
-.sidebar:hover #account {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.sidebar:hover a {
+    display: inline;
 }
 
-.sidebar:hover a {
-    display: block;
+.sidebar #menu {
+    margin-top: 50px;
 }
 
 .sidebar #menu div {
@@ -206,8 +206,11 @@ body {
 }
 
 .sidebar #account {
-    flex-direction: row;
-    margin: 12px 0 0 6px;
+    margin: 50px 0 0 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .sidebar #account img {

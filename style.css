@@ -150,35 +150,39 @@ body {
     height: 60px;
 }
 
-.sidebar #logout a,
-.sidebar #logout img {
-    display: none;
+.sidebar #logout {
+    visibility: hidden;
+    margin: 10px 0 35px 0;
+    font-size: 14px;
+    height: 14px;
+    background-color: #aaa;
+    width: 70px;
+    padding: 5px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar #logout a {
+    color: #000;
 }
 
 .sidebar:hover {
     width: 200px;
 }
 
-.sidebar:hover #logout a,
-.sidebar:hover #logout img {
-    display: flex;
-    color: #000;
-    font-size: 14px;
+.sidebar:hover #logout {
+    visibility: visible;
 }
 
-.sidebar:hover #logout {
+.sidebar:hover #account {
     display: flex;
-    background-color: #aaa;
-    width: 70px;
-    height: 14px;
-    padding: 5px 6px;
-    margin-left: 5px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    border-radius: 4px;
+    justify-content: center;
 }
 
 .sidebar:hover a {
@@ -203,16 +207,12 @@ body {
 
 .sidebar #account {
     flex-direction: row;
-    margin: 10px 0 25px 6px;
+    margin: 12px 0 0 6px;
 }
 
 .sidebar #account img {
     width: 60px;
     height: 60px;
-}
-
-.sidebar #logout {
-    height: 25px;
 }
 
 .sidebar #logout img {

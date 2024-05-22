@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div id="account">
+            <img src="/sidebar/account.png" alt="account">
+            <div id="logout">
+                <a>Logout</a>
+                <img src="/sidebar/logout.png" alt="logout">
+            </div>
+        </div>
+        <div id="menu">
+            <div id="dashboard" class="current-page">
+                <img src="/sidebar/dashboard.png" alt="dashboard">
+                <a href="/index.html">Dashboard</a>
+            </div>
+            <div id="marketing">
+                <img src="/sidebar/marketing.png" alt="marketing">
+                <a href="/pages/marketing.html">Marketing</a>
+            </div>
+            <div id="sales">
+                <img src="/sidebar/sales.png" alt="sales">
+                <a href="/pages/sales.html">Sales</a>
+            </div>
+            <div id="supporto">
+                <img src="/sidebar/supporto.png" alt="supporto">
+                <a href="/pages/support.html">Support</a>
+            </div>
+            <!-- Aggiungi altre categorie qui -->
+        </div>
+    </div>
+
+    <div id="content-dashboard">
+        <div class="dashboard-container">
+            <header class="dashboard-header">
+                <h1>Benvenuto in Agile CRM</h1>
+                <!-- Altri elementi dell'intestazione come il logo o i link di navigazione -->
+            </header>
+            <div class="dashboard-content">
+                <div class="dashboard-widgets">
+                    <div class="widget total-contacts">
+                        <span class="widget-title">Contatti totali</span>
+                        <span class="widget-value">120</span>
+                    </div>
+                    <div class="widget sales-value">
+                        <span class="widget-title">Valore delle vendite</span>
+                        <span class="widget-value">$545</span>
+                    </div>
+                    <div class="widget sales-funnel">
+                        <span class="widget-title">Sales Funnel</span>
+                        <div class="chart-container">
+                            <canvas id="salesFunnelChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="widget email-opened">
+                        <span class="widget-title">Email Aperte</span>
+                        <div class="chart-container">
+                            <canvas id="emailOpenedChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="widget last-activity">
+                        <span class="widget-title">Attività ultimi 7 giorni</span>
+                        <div class="chart-container">
+                            <canvas id="activityChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-details">
+                    <div class="details-block deals-milestones">
+                        <h2>I miei affari per milestone</h2>
+                        <div class="chart-container">
+                            <canvas id="dealsMilestonesChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="details-block revenue-graph">
+                        <h2>Grafico dei Ricavi</h2>
+                        <div class="chart-container">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="details-block activity-report">
+                        <h2>To-Do List</h2>
+                        <ul class="todo-list">
+                            <li>
+                                <input type="checkbox" id="task1">
+                                <label for="task1">Incontro con cliente X</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Chiamata con cliente Y</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Chiamata con cliente Y</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Chiamata con cliente Y</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="task2">
+                                <label for="task2">Chiamata con cliente Y</label>
+                            </li>
+                            <!-- Aggiungi altre attività qui -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

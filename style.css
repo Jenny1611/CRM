@@ -139,6 +139,7 @@ body {
     height: 100%;
     background: var(--sidebar-color);
     transition: 0.8s;
+    z-index: 1;
 }
 
 .sidebar a {

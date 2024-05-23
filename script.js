@@ -263,14 +263,15 @@ function drop(event) {
 
 
 const email_opening = document.getElementByClassName("email-box-unopened");
-const icon_path = document.getElementById('make-image').src = "/sidebar/" + email_aperta + ".jpg";
-let email_icon_path;
+const icon_path = document.getElementById("email_icon") ;
+const email_icon_path = document.getElementById('make-image').src = "/sidebar/" + email_aperta + ".jpg";
 
-email_opening.array.forEach(email => {
+email_opening.forEach(email => {
     email.addEventListener('click', () => {
+        email.className("")
+        email_icon_path = icon_path;
         email.className("email-box-opened")
-        email_icon = icon_path;
-
+        console.log(email_icon_path);
     })
 });
 

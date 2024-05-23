@@ -264,14 +264,13 @@ function drop(event) {
 
 const email_opening = document.getElementByClassName("email-box-unopened");
 const icon_path = document.getElementById('make-image').src = "/sidebar/" + email_aperta + ".jpg";
-const email_icon_path;
-email_opening.array.forEach(email => {
+let email_icon_path;
 
-    email.addEventListener('click'){
+email_opening.array.forEach(email => {
+    email.addEventListener('click', () => {
         email.className("email-box-opened")
         email_icon = icon_path;
-        
 
-    }
+    })
 });
 

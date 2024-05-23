@@ -6,10 +6,6 @@ body {
     background-color: #f4f4f4;
 }
 
-.cards4{
-
-}
-
 .dashboard-container,
 .sales-container {
     display: flex;
@@ -387,4 +383,22 @@ canvas {
     align-items: center;
 }
 
+.widget .email
+{
+    width: fit-content;
+    height: fit-content;
+}
+
+.email-box
+{
+    width: 300px;
+    height: 50px;
+    border: 1.5px solid grey;
+    align-items: left;
+}
+
+.email-title
+{
+    width: fit-content;
+}
 

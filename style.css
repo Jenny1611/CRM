@@ -164,6 +164,20 @@ body {
 .chart-container{
     align-content: center; 
 }
+.widget.last-activity{
+    display: flex;
+    flex-direction:row;
+    padding:  15px
+}
+.widget.last-activity>div{
+    margin: 30px;
+}
+div.widget.last-activity>div.doppio-grafico{
+    width: 500px;   
+}
+
+
+
 
 
 

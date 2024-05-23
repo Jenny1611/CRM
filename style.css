@@ -35,6 +35,10 @@ body {
     max-width: 1200px;
 }
 
+.marketing-content {
+    margin: auto;
+}
+
 .dashboard-widgets,
 .sales-widgets,
 .marketing-widgets {
@@ -48,6 +52,10 @@ body {
     flex-direction: column;
 }
 
+.marketing-widgets {
+    flex-direction: row;
+}
+
 .widget {
     background-color: white;
     border-radius: 5px;
@@ -56,6 +64,10 @@ body {
     text-align: center;
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
+}
+
+.marketing-widgets .widget {
+    flex: 1 1 calc(20% - 40px);
 }
 
 .sales-widget {

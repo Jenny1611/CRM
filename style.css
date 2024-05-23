@@ -163,9 +163,8 @@ body {
     z-index: 1;
 }
 
-.sidebar a {
+.sidebar span {
     display: none;
-    text-decoration: none;
     color: var(--sidebar-a);
     line-height: 60px;
     height: 60px;
@@ -202,7 +201,7 @@ body {
     visibility: visible;
 }
 
-.sidebar:hover a {
+.sidebar:hover span {
     display: inline;
 }
 
@@ -210,13 +209,14 @@ body {
     margin-top: 50px;
 }
 
-.sidebar #menu div {
+.sidebar #menu a {
     display: flex;
     height: 50px;
     align-items: center;
+    text-decoration: none;
 }
 
-.sidebar #menu div:hover {
+.sidebar #menu a:hover {
     background-color: var(--sidebar-hover);
 }
 

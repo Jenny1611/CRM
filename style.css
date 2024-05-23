@@ -66,6 +66,11 @@ body {
     box-sizing: border-box;
 }
 
+.widget.google-ads,
+.widget.meta-ads {
+    flex-direction: column;
+}
+
 .marketing-widgets .widget {
     flex: 1 1 calc(20% - 40px);
 }

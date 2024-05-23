@@ -379,8 +379,10 @@ canvas {
     align-items: center;
 }
 
-.widget .email
+
+.widget.email
 {
+    flex-direction: column;
     width: fit-content;
     height: fit-content;
 }
@@ -433,3 +435,10 @@ canvas {
     margin: 0;
     text-align: left;
 }
+.dashboard-content.email
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+

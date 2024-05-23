@@ -129,6 +129,48 @@ body {
 .todo-list label {
     font-size: 16px;
 }
+.widget.total-contacts{
+  
+    margin: 10px;
+    padding: 40px;
+    
+}
+
+.widget.sales-value{
+    
+    margin: 10px;
+    padding: 40px;
+}
+.widget.sales-value{
+    
+    margin: 10px;
+    padding: 40px;
+}
+
+.widget.total-contacts> span.widget-value{
+    padding: 12px;
+}
+.widget.sales-value>span.widget-value{
+   padding: 12px;
+}
+.chart-container{
+    align-content: center; 
+}
+.widget.last-activity{
+    display: flex;
+    flex-direction:row;
+    padding:  15px
+}
+.widget.last-activity>div{
+    margin: 30px;
+}
+div.widget.last-activity>div.doppio-grafico{
+    width: 500px;   
+}
+
+
+
+
 
 
 /**-------------------------------------FINE ------------------------------------------------ */

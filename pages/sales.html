@@ -41,209 +41,164 @@
     </div>
 
     <div id="content-sales">
-        <table id="infoTable">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Cognome</th>
-                    <th>Email</th>
-                    <th>Telefono</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Maria</td>
-                    <td>Rossi</td>
-                    <td>mariarossi@gmail.com</td>
-                    <td>012 3456 789</td>
-                </tr>
-                <tr>
-                    <td>Giulia</td>
-                    <td>Bianchi</td>
-                    <td>giuliabianchi@gmail.com</td>
-                    <td>256 1485 102</td>
-                </tr>
-                <tr>
-                    <td>Mario</td>
-                    <td>Rossi</td>
-                    <td>mariorossi@gmail.com</td>
-                    <td>365 789 789</td>
-                </tr>
-                <tr>
-                    <td>Alessia</td>
-                    <td>Pifferi</td>
-                    <td>alessiapifferi@gmail.com</td>
-                    <td>321 4801 958</td>
-                </tr>
-                <tr>
-                    <td>Giulio</td>
-                    <td>Golia</td>
-                    <td>giuliogolia@gmail.com</td>
-                    <td>152 3652 448</td>
-                </tr>
-                <tr>
-                    <td>Marco</td>
-                    <td>Verdi</td>
-                    <td>marcoverdi@gmail.com</td>
-                    <td>365 1203 991</td>
-                </tr>
-            </tbody>
-        </table>
-        <div id="kanban-board">
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <div id="kanban-da-contattare">
-                    <h1>DA CONTATTARE</h1>
-                    <img src="/kanban/add.png" alt="add" width="30px">
-                </div>
-                <div class="div-drag" id="drag1" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
+
+        <div id="content-sales">
+            <div class="sales-container">
+                <header class="sales-header">
+                    <h1>Sales</h1>
+                </header>
+                <div class="sales-content">
+                    <div class="sales-widgets">
+                        <div class="sales-widget">
+                            <table id="infoTable">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Cognome</th>
+                                        <th>Email</th>
+                                        <th>Telefono</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maria</td>
+                                        <td>Rossi</td>
+                                        <td>mariarossi@gmail.com</td>
+                                        <td>012 3456 789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giulia</td>
+                                        <td>Bianchi</td>
+                                        <td>giuliabianchi@gmail.com</td>
+                                        <td>256 1485 102</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mario</td>
+                                        <td>Rossi</td>
+                                        <td>mariorossi@gmail.com</td>
+                                        <td>365 789 789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alessia</td>
+                                        <td>Pifferi</td>
+                                        <td>alessiapifferi@gmail.com</td>
+                                        <td>321 4801 958</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Giulio</td>
+                                        <td>Golia</td>
+                                        <td>giuliogolia@gmail.com</td>
+                                        <td>152 3652 448</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Marco</td>
+                                        <td>Verdi</td>
+                                        <td>marcoverdi@gmail.com</td>
+                                        <td>365 1203 991</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>PROPOSTA INVIATA</h1>
-                <div class="div-drag" id="drag2" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
+                        <div class="sales-widget">
+                            <div id="kanban-board">
+                                <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <div id="kanban-da-contattare">
+                                        <h1>DA CONTATTARE</h1>
+                                        <img src="/kanban/add.png" alt="add" width="30px">
+                                    </div>
+                                    <div class="div-drag" id="drag1" draggable="true" ondragstart="drag(event)"
+                                        width="336" height="69">
+                                        <div class="dati">
+                                            <h2>John Smith</h2>
+                                            <b>Prodotto/servizio</b>
+                                            <p class="prezzo">€300</p>
+                                            <p class="data">GG/MM/AAAA</p>
+                                            <div class="attività">
+                                                <p>Attività</p>
+                                                <img src="/kanban/dropdown.png" alt="dropdown">
+                                                <img src="/kanban/add.png" alt="add">
+                                            </div>
+                                        </div>
+                                        <div class="icone">
+                                            <img src="/kanban/modifica.png" alt="modifica">
+                                            <img src="/kanban/telefono.png" alt="telefono">
+                                            <img src="/kanban/gmail.png" alt="gmail">
+                                            <img src="/kanban/whatsapp.png" alt="whatsapp">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <h1>NEGOZIAZIONE</h1>
+                                    <div class="div-drag" id="drag3" draggable="true" ondragstart="drag(event)"
+                                        width="336" height="69">
+                                        <div class="dati">
+                                            <h2>John Smith</h2>
+                                            <b>Prodotto/servizio</b>
+                                            <p class="prezzo">€300</p>
+                                            <p class="data">GG/MM/AAAA</p>
+                                            <div class="attività">
+                                                <p>Attività</p>
+                                                <img src="/kanban/dropdown.png" alt="dropdown">
+                                                <img src="/kanban/add.png" alt="add">
+                                            </div>
+                                        </div>
+                                        <div class="icone">
+                                            <img src="/kanban/modifica.png" alt="modifica">
+                                            <img src="/kanban/telefono.png" alt="telefono">
+                                            <img src="/kanban/gmail.png" alt="gmail">
+                                            <img src="/kanban/whatsapp.png" alt="whatsapp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <h1>CHIUSURA</h1>
+                                    <div class="div-drag" id="drag4" draggable="true" ondragstart="drag(event)"
+                                        width="336" height="69">
+                                        <div class="dati">
+                                            <h2>John Smith</h2>
+                                            <b>Prodotto/servizio</b>
+                                            <p class="prezzo">€300</p>
+                                            <p class="data">GG/MM/AAAA</p>
+                                            <div class="attività">
+                                                <p>Attività</p>
+                                                <img src="/kanban/dropdown.png" alt="dropdown">
+                                                <img src="/kanban/add.png" alt="add">
+                                            </div>
+                                        </div>
+                                        <div class="icone">
+                                            <img src="/kanban/modifica.png" alt="modifica">
+                                            <img src="/kanban/telefono.png" alt="telefono">
+                                            <img src="/kanban/gmail.png" alt="gmail">
+                                            <img src="/kanban/whatsapp.png" alt="whatsapp">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <h1>VENDITA CONCLUSA</h1>
+                                    <div class="div-drag" id="drag5" draggable="true" ondragstart="drag(event)"
+                                        width="336" height="69">
+                                        <div class="dati">
+                                            <h2>John Smith</h2>
+                                            <b>Prodotto/servizio</b>
+                                            <p class="prezzo">€300</p>
+                                            <p class="data">GG/MM/AAAA</p>
+                                            <div class="attività">
+                                                <p>Attività</p>
+                                                <img src="/kanban/dropdown.png" alt="dropdown">
+                                                <img src="/kanban/add.png" alt="add">
+                                            </div>
+                                        </div>
+                                        <div class="icone">
+                                            <img src="/kanban/modifica.png" alt="modifica">
+                                            <img src="/kanban/telefono.png" alt="telefono">
+                                            <img src="/kanban/gmail.png" alt="gmail">
+                                            <img src="/kanban/whatsapp.png" alt="whatsapp">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>NEGOZIAZIONE</h1>
-                <div class="div-drag" id="drag3" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
-                        </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>CHIUSURA</h1>
-                <div class="div-drag" id="drag4" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
-                        </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>VENDITA CONCLUSA</h1>
-                <div class="div-drag" id="drag5" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
-                        </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>POST-VENDITA</h1>
-                <div class="div-drag" id="drag6" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
-                        </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
-                    </div>
-                </div>
-            </div>
-            <div class="div-ondrop" ondrop="drop(event)" ondragover="allowDrop(event)">
-                <h1>PERSE</h1>
-                <div class="div-drag" id="drag7" draggable="true" ondragstart="drag(event)" width="336" height="69">
-                    <div class="dati">
-                        <h2>John Smith</h2>
-                        <b>Prodotto/servizio</b>
-                        <p class="prezzo">€300</p>
-                        <p class="data">GG/MM/AAAA</p>
-                        <div class="attività">
-                            <p>Attività</p>
-                            <img src="/kanban/dropdown.png" alt="dropdown">
-                            <img src="/kanban/add.png" alt="add">
-                        </div>
-                    </div>
-                    <div class="icone">
-                        <img src="/kanban/modifica.png" alt="modifica">
-                        <img src="/kanban/telefono.png" alt="telefono">
-                        <img src="/kanban/gmail.png" alt="gmail">
-                        <img src="/kanban/whatsapp.png" alt="whatsapp">
                     </div>
                 </div>
             </div>

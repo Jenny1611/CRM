@@ -56,10 +56,10 @@ var dealsMilestonesCtx = document.getElementById('dealsMilestonesChart').getCont
 var dealsMilestonesChart = new Chart(dealsMilestonesCtx, {
     type: 'pie',
     data: {
-        labels: ['Iniziale', 'In corso', 'Chiusi','Persi'],
+        labels: ['Iniziale', 'In corso', 'Chiusi', 'Persi'],
         datasets: [{
             label: 'Milestones',
-            data: [30, 25, 30,15],
+            data: [30, 25, 30, 15],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -128,7 +128,7 @@ var emailOpenedChart = new Chart(emailOpenedCtx, {
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const labels = ['Mario Task', 'Pippo Task', 'Gigi Task', 'Giorgio Task', 'Anna Task', 'Giulia Task', 'Armando Task'];
     const data = {
         labels: labels,
@@ -260,18 +260,3 @@ function drop(event) {
         event.target.insertAdjacentElement('afterend', draggedElement);
     }
 }
-
-
-const email_opening = document.getElementByClassName("email-box-unopened");
-const icon_path = document.getElementById("email_icon") ;
-const email_icon_path = document.getElementById('make-image').src = "/sidebar/" + email_aperta + ".jpg";
-
-email_opening.forEach(email => {
-    email.addEventListener('click', () => {
-        email.className("")
-        email_icon_path = icon_path;
-        email.className("email-box-opened")
-        console.log(email_icon_path);
-    })
-});
-

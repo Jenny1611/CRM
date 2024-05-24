@@ -72,13 +72,13 @@ body {
     box-sizing: border-box;
 }
 
-.widget img {
+.marketing-widgets .widget img {
     width: 100%;
     height: auto;
     margin-top: 20px;
 }
 
-.widget svg {
+.marketing-widgets .widget svg {
     display: block;
     height: 100px;
     margin:auto;

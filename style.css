@@ -445,7 +445,7 @@ canvas {
 
 #kanban-board {
     display: flex;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #kanban-board h1 {
@@ -503,14 +503,10 @@ canvas {
 }
 
 .div-drag .icone img {
-    background-color: rgba(44, 62, 80, 0.1);
-    border-radius: 100%;
-    padding: 6px;
+    border-radius: 0%;
     margin: 10px;
-}
-
-.div-drag .icone img:first-of-type {
-    background-color: rgba(44, 62, 80, 0.2);
+    width: 26px;
+    height: 26px;
 }
 
 .div-drag img {

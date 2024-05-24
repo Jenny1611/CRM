@@ -15,6 +15,10 @@ body {
     padding: 20px;
 }
 
+#content-sales {
+    margin-left: 75px;
+}
+
 .dashboard-header,
 .sales-header,
 .marketing-header {
@@ -197,7 +201,7 @@ div.widget.last-activity>div.doppio-grafico{
 /**-------------------------------------FINE ------------------------------------------------ */
 
 :root {
-    --sidebar-color: #333;
+    --sidebar-color: #2c3e50;
     --sidebar-a: #fff;
     --sidebar-hover: #777;
     --current-page: #666;
@@ -341,18 +345,25 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 0;
+    cursor: pointer;
 }
 
 th,
 td {
-    border: 1px solid #ddd;
+    border: 1px solid #2c3e50;
     padding: 10px;
     text-align: left;
+    height: 30px;
+}
+
+table tr:hover {
+    background-color: #f4f4f4;
 }
 
 th {
-    background-color: #555;
+    background-color: #2c3e50;
     color: white;
+    border: 1px solid #fff;
 }
 
 canvas {
@@ -367,29 +378,28 @@ canvas {
 }
 
 #kanban-board h1 {
-    font-size: 14px;
-    margin: 2px 20px;
+    font-size: 16px;
+    margin: 20px;
 }
 
 .div-ondrop,
 .div-drag {
-    border: 1px solid #000;
+    border: 1px solid #2c3e50;
 }
 
 .div-ondrop {
     min-width: 270px;
     min-height: 340px;
     height: fit-content;
-    background-color: #789;
+    background-color: #f4f4f4;
     text-align: center;
-    line-height: 30px;
 }
 
 .div-drag {
     width: 270px;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
     height: auto;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 20px;
     text-align: start;
     line-height: 20px;
@@ -422,10 +432,14 @@ canvas {
 }
 
 .div-drag .icone img {
-    background-color: #fff;
+    background-color: rgba(44, 62, 80, 0.1);
     border-radius: 100%;
     padding: 6px;
     margin: 10px;
+}
+
+.div-drag .icone img:first-of-type {
+    background-color: rgba(44, 62, 80, 0.2);
 }
 
 .div-drag img {
@@ -437,8 +451,14 @@ canvas {
 #kanban-da-contattare {
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
+    padding: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+#kanban-da-contattare li {
+    list-style-type: none;
 }
 
 .widget .email

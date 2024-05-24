@@ -264,6 +264,28 @@ div.details-block.activity-report>h2{
     width: 100%;
 }
 
+.controllo-andamento-task{
+    display: flex;
+}
+.controllo-andamento-task .last-activity {
+    margin-left: 50px;    
+    width: 750px;
+}
+div.widget.last-activity > div.doppio-grafico {
+    margin-left: 50px;
+}
+.doppio-grafico .chart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.doppio-grafico h2 {
+    margin: 0px;
+    margin-bottom: 20px;
+    
+}
+
 
 
 
@@ -299,13 +321,27 @@ body {
     z-index: 1;
 }
 
-.sidebar span {
+.sidebar span{
     display: none;
     color: var(--sidebar-a);
     line-height: 60px;
     height: 60px;
 }
 
+.sidebar #logo svg{
+
+    fill: var(--sidebar-a);
+    padding: 0 50PX;
+
+}
+#logo{
+    display: block;
+    text-align: center;
+}
+#logo span{
+    display: block;
+    visibility: hidden;
+}
 .sidebar #logout {
     visibility: hidden;
     margin: 10px 0 0 0;
@@ -340,6 +376,12 @@ body {
 .sidebar:hover span {
     display: inline;
 }
+.sidebar:hover #logo span {
+    visibility:visible !important;
+}
+
+
+
 
 .sidebar #menu {
     margin-top: 50px;

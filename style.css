@@ -260,6 +260,28 @@ div.details-block.activity-report>h2{
     width: 100%;
 }
 
+.controllo-andamento-task{
+    display: flex;
+}
+.controllo-andamento-task .last-activity {
+    margin-left: 50px;    
+    width: 750px;
+}
+div.widget.last-activity > div.doppio-grafico {
+    margin-left: 50px;
+}
+.doppio-grafico .chart-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.doppio-grafico h2 {
+    margin: 0px;
+    margin-bottom: 20px;
+    
+}
+
 
 
 

@@ -1,6 +1,3 @@
-const totali = document.querySelectorAll(".totale")
-const prezzi = document.querySelectorAll(".prezzo")
-
 function allowDrop(event) {
     event.preventDefault();
 }
@@ -19,6 +16,4 @@ function drop(event) {
     } else if (event.target.className === 'div-drag') {
         event.target.insertAdjacentElement('afterend', draggedElement);
     }
-
-    console.log(event)
 }

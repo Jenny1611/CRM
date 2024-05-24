@@ -14,6 +14,8 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    width: 1200px;
+    margin: auto;
 }
 
 .dashboard-header,
@@ -68,6 +70,19 @@ body {
     text-align: center;
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
+}
+
+.widget img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.widget svg {
+    display: block;
+    height: 100px;
+    margin:auto;
+    padding: 20px;
 }
 
 .widget.google-ads,

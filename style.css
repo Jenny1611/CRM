@@ -7,7 +7,8 @@ body {
 }
 
 .dashboard-container,
-.sales-container {
+.sales-container,
+.marketing-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,7 +16,8 @@ body {
 }
 
 .dashboard-header,
-.sales-header {
+.sales-header,
+.marketing-header {
     background-color: #2c3e50;
     color: white;
     width: 100%;
@@ -24,7 +26,8 @@ body {
 }
 
 .dashboard-content,
-.sales-content {
+.sales-content,
+.marketing-content {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -32,8 +35,13 @@ body {
     max-width: 1200px;
 }
 
+.marketing-content {
+    margin: auto;
+}
+
 .dashboard-widgets,
-.sales-widgets {
+.sales-widgets,
+.marketing-widgets {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -44,6 +52,10 @@ body {
     flex-direction: column;
 }
 
+.marketing-widgets {
+    flex-direction: row;
+}
+
 .widget {
     background-color: white;
     border-radius: 5px;
@@ -52,6 +64,15 @@ body {
     text-align: center;
     flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
+}
+
+.widget.google-ads,
+.widget.meta-ads {
+    flex-direction: column;
+}
+
+.marketing-widgets .widget {
+    flex: 1 1 calc(20% - 40px);
 }
 
 .sales-widget {
@@ -129,6 +150,48 @@ body {
 .todo-list label {
     font-size: 16px;
 }
+.widget.total-contacts{
+  
+    margin: 10px;
+    padding: 40px;
+    
+}
+
+.widget.sales-value{
+    
+    margin: 10px;
+    padding: 40px;
+}
+.widget.sales-value{
+    
+    margin: 10px;
+    padding: 40px;
+}
+
+.widget.total-contacts> span.widget-value{
+    padding: 12px;
+}
+.widget.sales-value>span.widget-value{
+   padding: 12px;
+}
+.chart-container{
+    align-content: center; 
+}
+.widget.last-activity{
+    display: flex;
+    flex-direction:row;
+    padding:  15px
+}
+.widget.last-activity>div{
+    margin: 30px;
+}
+div.widget.last-activity>div.doppio-grafico{
+    width: 500px;   
+}
+
+
+
+
 
 
 /**-------------------------------------FINE ------------------------------------------------ */

@@ -188,8 +188,58 @@ body {
 div.widget.last-activity>div.doppio-grafico{
     width: 500px;   
 }
+div.details-block.activity-report{
+    width: 500px;   
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 
 
+}
+li{
+    align-content : center;
+    justify-content: center;
+    margin: 20px 0px;
+    width: 200px;
+    align-items: center;
+     width: 100%;
+}
+
+ul.todo-list{
+    
+    width: 100%;
+    justify-content: center;
+}
+
+div.details-block.activity-report>h2{
+   height: 0px;  
+    }
+
+.activity-report h2 {
+    margin: 30px;
+    text-align: center;
+}
+
+.details-block {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+}
+  
+.details-block >.chart-container {
+    width:700px;
+    align-self: center;
+}
+
+.revenue-graph h2 {
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+.details-block canvas {
+    width: 100%;
+}
 
 
 

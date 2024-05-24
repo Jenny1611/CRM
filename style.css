@@ -299,13 +299,27 @@ body {
     z-index: 1;
 }
 
-.sidebar span {
+.sidebar span{
     display: none;
     color: var(--sidebar-a);
     line-height: 60px;
     height: 60px;
 }
 
+.sidebar #logo svg{
+
+    fill: var(--sidebar-a);
+    padding: 0 50PX;
+
+}
+#logo{
+    display: block;
+    text-align: center;
+}
+#logo span{
+    display: block;
+    visibility: hidden;
+}
 .sidebar #logout {
     visibility: hidden;
     margin: 10px 0 0 0;
@@ -340,6 +354,12 @@ body {
 .sidebar:hover span {
     display: inline;
 }
+.sidebar:hover #logo span {
+    visibility:visible !important;
+}
+
+
+
 
 .sidebar #menu {
     margin-top: 50px;

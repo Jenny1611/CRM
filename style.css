@@ -48,6 +48,11 @@ body {
     margin: auto;
 }
 
+.support-content
+{
+    flex-direction: row;
+}
+
 .dashboard-widgets,
 .sales-widgets,
 .marketing-widgets,
@@ -577,11 +582,67 @@ canvas {
     font-weight: 500;
 }
 
-.widget.email
-{
-    flex-direction: column;
-    width: 350px;
+.widget.email-list{
     height: fit-content;
+    width: 350px;
+    display: inline-block;
+    flex: none;
+}
+
+.ticket-info-container{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'long long long'
+    'short1 short2 short3'
+    'short4 short5 short6';
+}
+.ticket-long{
+    text-align: left;
+    height: 130px;
+    grid-area: long;
+}
+
+
+.ticket-short-1{
+    text-align: left;
+    width: 260px;
+    height: fit-content;
+    grid-area: short1;
+}
+
+.ticket-short-2{
+    text-align: left;
+    width: 260px;
+    height: fit-content;
+    grid-area: short2;
+}
+
+.ticket-short-3{
+    text-align: left;
+    width: 260px;
+    height: fit-content;
+    grid-area: short3;
+}
+.ticket-short-4{
+    text-align: left;
+    height: fit-content;
+    grid-area: short4;
+}
+.ticket-short-5{
+    text-align: left;
+    height: fit-content;
+    grid-area: short5;
+}
+.ticket-short-6{
+    text-align: left;
+    height: fit-content;
+    grid-area: short6;
+}
+
+.ticket h2{
+    margin: 0 auto;
 }
 
 .email-box-opened

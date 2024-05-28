@@ -44,12 +44,18 @@ body {
     max-width: 1200px;
 }
 
+.sales-widget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .marketing-content {
     margin: auto;
 }
 
-.support-content
-{
+.support-content {
     flex-direction: row;
 }
 
@@ -90,7 +96,7 @@ body {
 .marketing-widgets .widget svg {
     display: block;
     height: 60px;
-    margin:auto;
+    margin: auto;
     padding: 20px;
 }
 
@@ -148,8 +154,9 @@ body {
 .chart-container {
     position: relative;
     width: 100%;
-    height: 400px;  /* Altezza fissa per i grafici */
-    
+    height: 400px;
+    /* Altezza fissa per i grafici */
+
 }
 
 .details-block canvas,
@@ -178,46 +185,54 @@ body {
 .todo-list label {
     font-size: 16px;
 }
-.widget.total-contacts{
-  
+
+.widget.total-contacts {
+
     margin: 10px;
     padding: 40px;
-    
+
 }
 
-.widget.sales-value{
-    
-    margin: 10px;
-    padding: 40px;
-}
-.widget.sales-value{
-    
+.widget.sales-value {
+
     margin: 10px;
     padding: 40px;
 }
 
-.widget.total-contacts> span.widget-value{
+.widget.sales-value {
+
+    margin: 10px;
+    padding: 40px;
+}
+
+.widget.total-contacts>span.widget-value {
     padding: 12px;
 }
-.widget.sales-value>span.widget-value{
-   padding: 12px;
+
+.widget.sales-value>span.widget-value {
+    padding: 12px;
 }
-.chart-container{
-    align-content: center; 
+
+.chart-container {
+    align-content: center;
 }
-.widget.last-activity{
+
+.widget.last-activity {
     display: flex;
-    flex-direction:row;
-    padding:  15px
+    flex-direction: row;
+    padding: 15px
 }
-.widget.last-activity>div{
+
+.widget.last-activity>div {
     margin: 30px;
 }
-div.widget.last-activity>div.doppio-grafico{
-    width: 500px;   
+
+div.widget.last-activity>div.doppio-grafico {
+    width: 500px;
 }
-div.details-block.activity-report{
-    width: 500px;   
+
+div.details-block.activity-report {
+    width: 500px;
     text-align: center;
     align-content: center;
     display: flex;
@@ -225,24 +240,25 @@ div.details-block.activity-report{
 
 
 }
-li{
-    align-content : center;
+
+li {
+    align-content: center;
     justify-content: center;
     margin: 20px 0px;
     width: 200px;
     align-items: center;
-     width: 100%;
+    width: 100%;
 }
 
-ul.todo-list{
-    
+ul.todo-list {
+
     width: 100%;
     justify-content: center;
 }
 
-div.details-block.activity-report>h2{
-   height: 0px;  
-    }
+div.details-block.activity-report>h2 {
+    height: 0px;
+}
 
 .activity-report h2 {
     margin: 30px;
@@ -255,9 +271,9 @@ div.details-block.activity-report>h2{
     display: flex;
     flex-direction: column;
 }
-  
-.details-block >.chart-container {
-    width:700px;
+
+.details-block>.chart-container {
+    width: 700px;
     align-self: center;
 }
 
@@ -265,30 +281,35 @@ div.details-block.activity-report>h2{
     margin: 30px 0px 0px 0px;
     text-align: center;
 }
+
 .details-block canvas {
     width: 100%;
 }
 
-.controllo-andamento-task{
+.controllo-andamento-task {
     display: flex;
 }
+
 .controllo-andamento-task .last-activity {
-    margin-left: 50px;    
+    margin-left: 50px;
     width: 750px;
 }
-div.widget.last-activity > div.doppio-grafico {
+
+div.widget.last-activity>div.doppio-grafico {
     margin-left: 50px;
 }
-.doppio-grafico .chart-container{
+
+.doppio-grafico .chart-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
+
 .doppio-grafico h2 {
     margin: 0px;
     margin-bottom: 20px;
-    
+
 }
 
 
@@ -326,27 +347,30 @@ body {
     z-index: 1;
 }
 
-.sidebar span{
+.sidebar span {
     display: none;
     color: var(--sidebar-a);
     line-height: 60px;
     height: 60px;
 }
 
-.sidebar #logo svg{
+.sidebar #logo svg {
 
     fill: var(--sidebar-a);
     padding: 0 50PX;
 
 }
-#logo{
+
+#logo {
     display: block;
     text-align: center;
 }
-#logo span{
+
+#logo span {
     display: block;
     visibility: hidden;
 }
+
 .sidebar #logout {
     visibility: hidden;
     margin: 10px 0 0 0;
@@ -381,8 +405,9 @@ body {
 .sidebar:hover span {
     display: inline;
 }
+
 .sidebar:hover #logo span {
-    visibility:visible !important;
+    visibility: visible !important;
 }
 
 
@@ -460,7 +485,7 @@ body {
 }
 
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
     margin: 0;
     cursor: pointer;
@@ -506,15 +531,15 @@ canvas {
 }
 
 .div-ondrop {
-    min-width: 270px;
-    min-height: 340px;
+    min-width: 250px;
+    min-height: 350px;
     height: fit-content;
     background-color: #f4f4f4;
     text-align: center;
 }
 
 .div-drag {
-    width: 270px;
+    width: 250px;
     margin: 12px;
     height: auto;
     background-color: #fff;
@@ -582,41 +607,40 @@ canvas {
     font-weight: 500;
 }
 
-.widget.email-list{
+.widget.email-list {
     height: fit-content;
     width: 350px;
     display: inline-block;
     flex: none;
 }
 
-.ticket-info-container{
+.ticket-info-container {
     width: 100%;
     height: fit-content;
     display: grid;
     gap: 20px;
     grid-template-areas:
-    'long long long'
-    'short1 short2 short3'
-    'long2 long2 long2';
+        'long long long'
+        'short1 short2 short3'
+        'long2 long2 long2';
 }
-.ticket-long{
+
+.ticket-long {
     text-align: left;
     height: 130px;
     grid-area: long;
 }
 
-#content-support h3
-{
+#content-support h3 {
     margin-bottom: 10px;
 }
 
-.support-content header
-{
+.support-content header {
     font-size: 16px;
     font-weight: 700;
 }
 
-.ticket-short-1{
+.ticket-short-1 {
     text-align: left;
     width: 260px;
     height: 380px;
@@ -625,47 +649,44 @@ canvas {
 
 
 
-.ticket-short-2{
+.ticket-short-2 {
     text-align: left;
     width: 260px;
     height: 380px;
     grid-area: short2;
 }
 
-.ticket-short-3{
+.ticket-short-3 {
     text-align: left;
     width: 260px;
     height: 380px;
     grid-area: short3;
 }
 
-.ticket-short-3 img
-{
+.ticket-short-3 img {
     margin-right: 5px;
 }
 
-.ticket-long-2{
+.ticket-long-2 {
     text-align: left;
     height: fit-content;
     grid-area: long2;
 }
 
-.ticket h2{
+.ticket h2 {
     margin: 0 auto;
 }
 
-.email-box-opened
-{
+.email-box-opened {
     display: flex;
     width: 300px;
     height: 50px;
     border: 1.5px solid grey;
     align-items: left;
-    
+
 }
 
-.email-box-unopened
-{
+.email-box-unopened {
     display: flex;
     width: 300px;
     height: 50px;
@@ -676,30 +697,25 @@ canvas {
     background-color: rgb(233, 233, 233);
 }
 
-.email-title
-{
+.email-title {
     font-size: 14px;
     text-align: left;
-    margin: 10px 0 0 0 ;
+    margin: 10px 0 0 0;
     width: fit-content;
 }
 
-.email-icon
-{
+.email-icon {
     padding: 10px;
     align-items: left;
 }
 
-.email-text 
-{
-   
+.email-text {
+
     flex-direction: column;
     font-size: 12px;
 }
 
-.email-text p
-{
+.email-text p {
     margin: 0;
     text-align: left;
 }
-
